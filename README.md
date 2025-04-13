@@ -20,3 +20,27 @@ For the Uri value variable, this value should be the URI this QuadArrayMesh will
 Simply save and respawn this object to activate the Mod and open a WebSocket connection.
 
 ## TBD - Instructions on how to send QuadArrayMesh line updates.
+
+To initialize a QuadArrayMesh, send the following JSON:
+
+```
+{
+    "type": "init",
+    "width": 320,
+    "height": 240
+}
+```
+
+Where the width and height is the size for the QuadArrayMesh. The Mod will create the QuadArrayMesh automatically in the QAMWebSocket/Slot location using the width and height specified in the init message.
+
+To send a link update to the QuadArrayMesh, send the following JSON:
+
+```
+{
+    "type": "line",
+    "y": 20,   // <0 - height>
+    "colors": <Base64 encoded RGB values for a row of width size>
+}
+```
+
+The ```colors``` value must contain a Base64 encoded array of RGB values. Each RGB value should be 24 bits long (8 bits per color) and is encoded in a packed binary form. Currently only full line updates are supported.
