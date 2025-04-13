@@ -19,7 +19,7 @@ For the Uri value variable, this value should be the URI this QuadArrayMesh will
 
 Simply save and respawn this object to activate the Mod and open a WebSocket connection.
 
-## TBD - Instructions on how to send QuadArrayMesh line updates.
+## Sending QuadArrayMesh line updates
 
 To initialize a QuadArrayMesh, send the following JSON:
 
