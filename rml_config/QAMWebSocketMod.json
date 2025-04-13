@@ -1,0 +1,6 @@
+{
+    "version": "1.0.0",
+    "values": {
+        "allowedUris": "ws://localhost:8080/,wss://localhost:8080/"
+    }
+}

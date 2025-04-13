@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{6165b3ff-6cb7-4f5c-b039-585db64db6eb}") = "QAMWebSocketMod", "QAMWebSocketMod.csproj", "{97055e30-0ca0-44e8-8f87-b43757d6b750}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97055e30-0ca0-44e8-8f87-b43757d6b750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97055e30-0ca0-44e8-8f87-b43757d6b750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97055e30-0ca0-44e8-8f87-b43757d6b750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97055e30-0ca0-44e8-8f87-b43757d6b750}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97055e30-0ca0-44e8-8f87-b43757d6b750}
+	EndGlobalSection
+EndGlobal
