@@ -5,7 +5,7 @@ ResoniteModLoader Mod to update a QuadArrayMesh by using JSON values sent over a
 
 If using the Mod on a graphical client, ensure that the ResoniteModSettings Mod is also installed and edit the Allowed URIs property to include a list of all permitted URIs, or if you are on a headless client, edit the allowedUris value in the ```rml_config\QAMWebSocketMod.json``` file to include a comma separated list of allowed URIs for WebSocket connections from the Mod. Note: If this list is empty or the URI value is not found in the list, the connection will be blocked.
 
-In Resonite, create a new Empty object and populated it with a Dynamic Variable Space named ```QAMWebSocket```. Ensure that Direct Binding is enabled.
+In Resonite, create a new Empty object and populated it with a Dynamic Variable Space named ```QAMWebSocket```.
 
 Create the following three variables somewhere in that space -
 
@@ -21,7 +21,7 @@ Simply save and respawn this object to activate the Mod and open a WebSocket con
 
 ## Sending QuadArrayMesh line updates
 
-To initialize a QuadArrayMesh, send the following JSON:
+To initialize a QuadArrayMesh, send the following JSON via the WebSocket:
 
 ```
 {
@@ -33,7 +33,7 @@ To initialize a QuadArrayMesh, send the following JSON:
 
 Where the width and height is the size for the QuadArrayMesh. The Mod will create the QuadArrayMesh automatically in the QAMWebSocket/Slot location using the width and height specified in the init message.
 
-To send a link update to the QuadArrayMesh, send the following JSON:
+To send a link update to the QuadArrayMesh, send the following JSON via the WebSocket:
 
 ```
 {
@@ -44,3 +44,4 @@ To send a link update to the QuadArrayMesh, send the following JSON:
 ```
 
 The ```colors``` value must contain a Base64 encoded array of RGB values. Each RGB value should be 24 bits long (8 bits per color) and is encoded in a packed binary form. Currently only full line updates are supported.
+
