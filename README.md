@@ -1,5 +1,5 @@
 # QAMWebSocketMod
-ResoniteModLoader Mod to update a QuadArrayMesh by using JSON values sent over a WebSocket connection.
+A [ResoniteModLoader](https://github.com/resonite-modding-group/ResoniteModLoader) mod for [Resonite](https://resonite.com/) used to create and update a QuadArrayMesh by using JSON values sent over a WebSocket connection.
 
 ## Usage
 
