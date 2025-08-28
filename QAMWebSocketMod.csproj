@@ -65,4 +65,9 @@
       <HintPath Condition="Exists('$(ResonitePath)ResoniteModLoader.dll')">$(ResonitePath)ResoniteModLoader.dll</HintPath>
     </Reference>
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="'$(CopyToMods)'=='true'">
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(ResonitePath)rml_mods" />
+    <Message Text="Copied $(TargetFileName) to $(ResonitePath)rml_mods" Importance="high" />
+  </Target>
 </Project>
