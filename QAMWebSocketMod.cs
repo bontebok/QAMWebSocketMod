@@ -1,6 +1,7 @@
 ﻿using Elements.Core;
 using FrooxEngine;
 using HarmonyLib;
+using Renderite.Shared;
 using ResoniteModLoader;
 using System;
 using System.Threading.Tasks;
@@ -13,8 +14,8 @@ namespace QAMWebSocketMod
     public class QAMWebSocketMod : ResoniteMod
     {
         public override string Name => "QAMWebSocketMod";
-        public override string Author => "Rucio";
-        public override string Version => "1.0.0";
+        public override string Author => "Rucio, qualia";
+        public override string Version => "1.1.0";
         public override string Link => "https://github.com/bontebok/QAMWebSocketMod";
 
         [AutoRegisterConfigKey]
